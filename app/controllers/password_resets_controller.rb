@@ -5,17 +5,14 @@ class PasswordResetsController < ApplicationController
 
   def create
   	user = User.find_by_email(params[:email])
-<<<<<<< HEAD
     if user
   	  user.send_password_reset
       redirect_to root_path, :notice => "Email enviado con instrucciones."
     else
       redirect_to new_password_reset_path, :notice => "No existe ningun usuario con ese email registrado en este blog."
     end
-=======
   	user.send_password_reset if user
   	redirect_to root_path, :notice => "Email enviado con instrucciones."
->>>>>>> heroku/master
   end
 
   def edit
