@@ -11,8 +11,6 @@ class PasswordResetsController < ApplicationController
     else
       redirect_to new_password_reset_path, :notice => "No existe ningun usuario con ese email registrado en este blog."
     end
-  	user.send_password_reset if user
-  	redirect_to root_path, :notice => "Email enviado con instrucciones."
   end
 
   def edit

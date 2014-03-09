@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20140309160753) do
-=======
 ActiveRecord::Schema.define(:version => 20140306164358) do
->>>>>>> heroku/master
 
   create_table "articleaddressees", :force => true do |t|
     t.integer "article_id"
@@ -81,11 +77,7 @@ ActiveRecord::Schema.define(:version => 20140306164358) do
   add_index "micropostaddressees", ["user_id"], :name => "index_micropostaddressees_on_user_id"
 
   create_table "microposts", :force => true do |t|
-<<<<<<< HEAD
     t.text     "content"
-=======
-    t.string   "content"
->>>>>>> heroku/master
     t.integer  "user_id"
     t.string   "addressees"
     t.integer  "thing"

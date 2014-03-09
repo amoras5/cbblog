@@ -14,11 +14,7 @@ $(document).ready(evento);
 //Pie de página formulario micropost para indicar límite máximo de caracteres.
 function postext(){
   $(".postext").inputlimiter({
-<<<<<<< HEAD
     limit: 500,
-=======
-    limit: 250,
->>>>>>> heroku/master
     remText: '%n caractere%s restantes.',
     limitText: 'Campo limitado a %n caractere%s.'
   });

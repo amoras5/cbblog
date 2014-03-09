@@ -16,11 +16,8 @@ class MicropostsController < ApplicationController
             redirect_to root_path
           else
             @feed_items = []
-<<<<<<< HEAD
             render 'static_pages/inicio'
-=======
             render 'static_pages/home'
->>>>>>> heroku/master
           end
         else
           redirect_to root_path

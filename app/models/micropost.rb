@@ -26,11 +26,7 @@ class Micropost < ActiveRecord::Base
   has_many   :replies, :class_name => "Micropost", :foreign_key => "parent_post_id"
 
   validates :user_id, presence: true
-<<<<<<< HEAD
   validates :content, presence: true, :length => { :maximum => 501 }
-=======
-  validates :content, presence: true, :length => { :maximum => 251 }
->>>>>>> heroku/master
 
   #Query para seleccionar los microposts que se muestran en los avisos.
   def self.from_users_followed_by(user)
